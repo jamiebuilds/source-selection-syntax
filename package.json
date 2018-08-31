@@ -1,6 +1,6 @@
 {
   "name": "source-selection-syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Short simple syntax for selecting source code",
   "main": "index.js",
   "repository": "https://github.com/jamiebuilds/source-selection-syntax",
