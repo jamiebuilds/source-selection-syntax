@@ -1,0 +1,20 @@
+{
+  "name": "source-selection-syntax",
+  "version": "0.0.0",
+  "description": "Short simple syntax for selecting source code",
+  "main": "index.js",
+  "repository": "https://github.com/jamiebuilds/source-selection-syntax",
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "examples.json"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "flow-bin": "^0.79.1"
+  }
+}

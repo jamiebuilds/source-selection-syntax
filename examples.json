@@ -1,0 +1,65 @@
+{
+  "1;2;3": [
+    { "positions": [{ "start": { "row": 1 } }] },
+    { "positions": [{ "start": { "row": 2 } }] },
+    { "positions": [{ "start": { "row": 3 } }] }
+  ],
+  "./file.txt:1:1-2:2,3:3-4:4;./file.txt:5:5-6:6": [{
+    "filepath": "./file.txt",
+    "positions": [
+      { "start": { "row": 1, "column": 1 }, "end": { "row": 2, "column": 2 } },
+      { "start": { "row": 3, "column": 3 }, "end": { "row": 4, "column": 4 } }
+    ]
+  }, {
+    "filepath": "./file.txt",
+    "positions": [
+      { "start": { "row": 5, "column": 5 }, "end": { "row": 6, "column": 6 } }
+    ]
+  }],
+  "./file.txt;1:1;./path/to/file.txt:2:2": [
+    { "filepath": "./file.txt" },
+    { "positions": [{ "start": { "row": 1, "column": 1 } }] },
+    {
+      "filepath": "./path/to/file.txt",
+      "positions": [{ "start": { "row": 2, "column": 2 } }]
+    }
+  ],
+  "./file": [
+    { "filepath": "./file" }
+  ],
+  "./file.txt": [
+    { "filepath": "./file.txt" }
+  ],
+  "./path/to/file.txt": [
+    { "filepath": "./path/to/file.txt" }
+  ],
+  "/file": [
+    { "filepath": "/file" }
+  ],
+  "/file.txt": [
+    { "filepath": "/file.txt" }
+  ],
+  "/path/to/file.txt": [
+    { "filepath": "/path/to/file.txt" }
+  ],
+  "1": [
+    { "positions": [{ "start": { "row": 1 } }] }
+  ],
+  "1:1": [
+    { "positions": [{ "start": { "row": 1, "column": 1 } }] }
+  ],
+  "999:999": [
+    { "positions": [{ "start": { "row": 999, "column": 999 } }] }
+  ],
+  "1:1-2:2": [{
+    "positions": [
+      { "start": { "row": 1, "column": 1 }, "end": { "row": 2, "column": 2 } }
+    ]
+  }],
+  "1:1-2:2,3:3-4:4": [{
+    "positions": [
+      { "start": { "row": 1, "column": 1 }, "end": { "row": 2, "column": 2 } },
+      { "start": { "row": 3, "column": 3 }, "end": { "row": 4, "column": 4 } }
+    ]
+  }]
+}
